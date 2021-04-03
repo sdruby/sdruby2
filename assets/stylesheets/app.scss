@@ -1,0 +1,42 @@
+body {
+  margin-top: 200px;
+  text-align: center;
+}
+
+h2 {
+  margin: 24px 0;
+}
+
+ul {
+  list-style-type: none;
+  span {
+    display: inline-block;
+  }
+}
+
+a {
+  color: #e11b22;
+}
+
+.content p {
+  margin: 0 4rem;
+  text-align: left;
+}
+
+#intro {
+  margin: 1.5rem 0 3rem 0;
+}
+
+.icon {
+  color: #50301a;
+}
+
+@media (max-width: 1023px) {
+  body {
+    margin-top: 20px;
+  }
+  .content p {
+    margin: 0;
+    text-align: left;
+  }
+}
