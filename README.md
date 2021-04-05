@@ -5,7 +5,7 @@ This is a temporary placeholder website for SD Ruby.
 This site includes:
 - The SD Ruby logo
 - Social links:
-  - Meetup.com
+  - Meetup
   - Slack
   - Google Group
   - Twitter
