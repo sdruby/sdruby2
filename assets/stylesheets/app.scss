@@ -1,5 +1,8 @@
+// * {
+//   outline: 1px solid orange;
+// }
+
 body {
-  margin-top: 200px;
   text-align: center;
 }
 
@@ -24,11 +27,28 @@ a {
 }
 
 #intro {
-  margin: 1.5rem 0 3rem 0;
+  margin: 1.5rem auto 3rem auto;
+  max-width: 920px;
+}
+
+.columns {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 920px;
 }
 
 .icon {
   color: #50301a;
+}
+
+@media (max-width: 800px) {
+  body {
+    margin-top: 20px;
+  }
+  .content p {
+    margin: 0 ;
+    text-align: left;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -36,7 +56,18 @@ a {
     margin-top: 20px;
   }
   .content p {
-    margin: 0;
     text-align: left;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1025px) and (min-height: 1000px) {
+  body {
+    margin-top: 20vh;
   }
 }
