@@ -1,9 +1,5 @@
 require 'haml'
 
-# VIEWS
-set :haml, :format => :html5, :attr_wrapper => '"'
-set :views, File.dirname(__FILE__) + "/views"
-
 # HELPERS
 def image_tag(image, options = {})
   # Get image filename (but remove @1x and @2x resolution suffixes)
@@ -55,12 +51,18 @@ class SDRuby < Sinatra::Base
 
   # CONFIG
 
-  # Configure for development environment
+  # Use double-quoted attributes
+  set :haml, {format: :html5, attr_wrapper: '"'}
+
+  # Store views in /views
+  set :views, File.dirname(__FILE__) + "/views"
+
+  # Configure development environment
   configure :development do
     set :show_exceptions, true
   end
 
-  # Configure for all environments
+  # Configure all environments
   configure do
     # Initialize sprockets
     set :environment, Sprockets::Environment.new
@@ -80,15 +82,17 @@ class SDRuby < Sinatra::Base
     end
   end
 
+  # Redirect requests to https in production
+  before do
+    if settings.development?
+    redirect request.url.sub('http', 'https') unless request.secure?
+    end
+  end
+
   # ROUTES
 
   # Homepage
   get '/' do
-    @base_url = "#{request.scheme}://#{request.host}"
-    if self.class.development?
-      @base_url += ":3000"
-    end
-
     haml :index
   end
 end
