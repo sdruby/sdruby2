@@ -49,7 +49,13 @@
 
     - # Generic icons
     - [128, 192, 256, 512].each do |size|
-      %link{:href => "/icons/#{size}.png", :rel => "icon", :sizes => "#{size}x#{size}"}
+      %link{href: "/icons/#{size}.png", rel: "icon", sizes: "#{size}x#{size}"}
+
+    - # Atom feed
+    %link{href: "http://www.sdruby.org/podcast.atom", rel: "alternate", type: "application/atom+xml", title: "SD Ruby Podcast"}
+
+    - # RSS feed
+    %link{href: "http://www.sdruby.org/podcast.rss", rel: "alternate", type: "application/rss+xml", title: "SD Ruby Podcast"}
 
   %body
     %section.section
