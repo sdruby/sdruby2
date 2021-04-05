@@ -13,7 +13,7 @@
 
     - # Open Graph
     %meta{property: "og:description", content: "SD Ruby, based in San Diego, CA, is a meetup for developers who use Ruby, Ruby and Rails, and a ton of other fun web technologies."}
-    %meta{property: "og:image", content: "#{request.url}icons/opengraph.png"}
+    %meta{property: "og:image", content: "#{request.base_url}/icons/opengraph.png"}
     %meta{property: "og:image:width", content: 1200}
     %meta{property: "og:image:height", content: 630}
     %meta{property: "og:image:type", content: "image/png"}
@@ -21,12 +21,12 @@
     %meta{property: "og:site_name", content: "SD Ruby"}
     %meta{property: "og:title", content: "SD Ruby"}
     %meta{property: "og:type", content: "website"}
-    %meta{property: "og:url", content: "http://sdruby.org"}
+    %meta{property: "og:url", content: "#{request.base_url}"}
 
     - # Twitter card
     %meta{name: "twitter:card", content: "summary_large_image"}
     %meta{name: "twitter:description", content: "SD Ruby, based in San Diego, CA, is a meetup for developers who use Ruby, Ruby and Rails, and a ton of other fun web technologies."}
-    %meta{name: "twitter:image", content: "#{request.url}icons/opengraph.png"}
+    %meta{name: "twitter:image", content: "#{request.base_url}/icons/opengraph.png"}
     %meta{name: "twitter:title", content: "SD Ruby"}
     %meta{name: "twitter:site", content: "@sdruby"}
 
@@ -52,10 +52,10 @@
       %link{href: "/icons/#{size}.png", rel: "icon", sizes: "#{size}x#{size}"}
 
     - # Atom feed
-    %link{href: "http://www.sdruby.org/podcast.atom", rel: "alternate", type: "application/atom+xml", title: "SD Ruby Podcast"}
+    %link{href: "#{request.base_url}/podcast.atom", rel: "alternate", type: "application/atom+xml", title: "SD Ruby Podcast"}
 
     - # RSS feed
-    %link{href: "http://www.sdruby.org/podcast.rss", rel: "alternate", type: "application/rss+xml", title: "SD Ruby Podcast"}
+    %link{href: "#{request.base_url}/podcast.rss", rel: "alternate", type: "application/rss+xml", title: "SD Ruby Podcast"}
 
   %body
     %section.section
