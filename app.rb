@@ -84,8 +84,8 @@ class SDRuby < Sinatra::Base
 
   # Redirect requests to https in production
   before do
-    if settings.production?
-    redirect request.url.sub('http', 'https') unless request.secure?
+    if Sinatra::Application.environment == "production"
+      redirect request.url.sub('http', 'https') unless request.secure?
     end
   end
 
