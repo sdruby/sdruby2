@@ -1,6 +1,6 @@
 # SD Ruby
 
-This is a temporary placeholder website for SD Ruby.
+This is the current website for SD Ruby.
 
 This site includes:
 - The SD Ruby logo
@@ -9,6 +9,8 @@ This site includes:
   - Slack
   - Google Group
   - Twitter
+
+For now, this site is mainly a placeholder, but we'll build it out over time.
 
 ## Getting started
 
