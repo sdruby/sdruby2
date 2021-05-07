@@ -93,6 +93,15 @@ class SDRuby < Sinatra::Base
 
   # Homepage
   get '/' do
+    @title = "SD Ruby"
+
     haml :index
+  end
+
+  # Code of Conduct
+  get '/conduct' do
+    @title = "Code of Conduct"
+
+    haml :conduct
   end
 end

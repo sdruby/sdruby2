@@ -4,6 +4,12 @@
 
 body {
   text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 300px;
+  color: #e11b22 !important;
 }
 
 h2 {
@@ -41,10 +47,24 @@ a {
   color: #50301a;
 }
 
-@media (max-width: 800px) {
-  body {
-    margin-top: 20px;
+footer {
+  background: white !important;
+  padding: 9rem 0 0 0 !important;
+  font-size: 16px;
+  a {
+    color: #999;
+    &:hover {
+      color: #e11b22;
+    }
   }
+}
+
+.inspired_by {
+  color: #999;
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
   .content p {
     margin: 0 ;
     text-align: left;
@@ -52,22 +72,13 @@ a {
 }
 
 @media (max-width: 1023px) {
-  body {
-    margin-top: 20px;
-  }
   .content p {
     text-align: left;
   }
 }
 
-@media (min-width: 1025px) {
-  body {
-    margin-top: 40px;
-  }
-}
-
 @media (min-width: 1025px) and (min-height: 1000px) {
-  body {
+  .logo {
     margin-top: 20vh;
   }
 }
