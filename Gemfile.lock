@@ -2,8 +2,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     concurrent-ruby (1.1.8)
-    execjs (2.7.0)
-    ffi (1.15.0)
+    execjs (2.8.1)
+    ffi (1.15.1)
     haml (5.2.1)
       temple (>= 0.8.0)
       tilt
