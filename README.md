@@ -19,7 +19,7 @@ For now, this site is mainly a placeholder, but we'll build it out over time.
 2. `git clone git@github.com:sdruby/sdruby2.git`
 
 ### Configure the app and bundle install
-1. Switch to Ruby 2.7.3 with the Ruby version manager of your choice (this
+1. Switch to Ruby 2.7.5 with the Ruby version manager of your choice (this
 should happen automatically from the `.ruby-version` file)
 4. Bundle your gem dependencies: `bundle install`.
 
