@@ -24,4 +24,4 @@ should happen automatically from the `.ruby-version` file)
 4. Bundle your gem dependencies: `bundle install`.
 
 ### Launch the app
-1. Run `bundle exec foreman start` to launch the app.
+1. Run `bundle exec shotgun config.ru -p 3000` to launch the app.
