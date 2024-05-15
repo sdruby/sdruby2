@@ -1,9 +1,9 @@
 = image_tag("/assets/logo.svg", class: "logo", alt: "SD Ruby logo", size: "800x332")
 
 #intro
-  %p SD Ruby, based in San Diego, CA, is a meetup for developers who use Ruby, Ruby and Rails, and a ton of other fun web technologies.
+  %p SD Ruby is a meetup for software developers who use Ruby, Ruby and Rails, and a ton of other fun web technologies.
 
-  %p Normally, we meet once in a month in person. But, until the pandemic is over, we'll be doing monthly virtual meetups.
+  %p We meet on the first Thursday of the month at #{link_to "Ivy Street Coworking", "https://ivystreet.co/", target: "blank"} in South Park.
 
   %p If you're interested in Ruby or Ruby on Rails, please join us!
 
@@ -11,24 +11,26 @@
   .column
     %span.icon
       %i.fab.fa-meetup
-    %span= link_to "Meetup", "https://www.meetup.com/sdruby/"
+    %span= link_to "Meetup", "https://www.meetup.com/sdruby/", target: "blank"
   .column
     %span.icon
       %i.fab.fa-slack
-    %span= link_to "Slack", "https://sd-ruby.slack.com/"
+    %span= link_to "Slack", "https://sd-ruby.slack.com/", target: "blank"
   .column
     %span.icon
       %i.fab.fa-google
-    %span= link_to "Google", "https://groups.google.com/g/sdruby"
+    %span= link_to "Google", "https://groups.google.com/g/sdruby", target: "blank"
   .column
     %span.icon
       %i.fab.fa-youtube
-    %span= link_to "YouTube", "http://youtube.com/@sdruby"
+    %span= link_to "YouTube", "http://youtube.com/@sdruby", target: "blank"
   .column
     %span.icon
-      %i.fab.fa-twitter
-    %span= link_to "Twitter", "https://twitter.com/sdruby"
+      %i.fab.fa-x-twitter
+    %span= link_to "Twitter", "https://twitter.com/sdruby", target: "blank"
 
 %footer.footer
   .content.has-text-centered
-    #{link_to "Read our Code of Conduct", "/conduct"}.
+    #{link_to "Meet the Organizers", "/organizers"}
+  .content.has-text-centered
+    #{link_to "Read our Code of Conduct", "/conduct"}
