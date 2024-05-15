@@ -104,4 +104,11 @@ class SDRuby < Sinatra::Base
 
     haml :conduct
   end
+
+  # Organizers
+  get '/organizers' do
+    @title = "Meet the Organizers"
+
+    haml :organizers
+  end
 end

@@ -1,10 +1,10 @@
 // * {
 //   outline: 1px solid orange;
 // }
+$primary: #ff5733; // Change this to your desired color
 
 body {
   text-align: center;
-  margin-top: 20px;
 }
 
 h1 {
@@ -16,20 +16,36 @@ h2 {
   margin: 24px 0;
 }
 
-ul {
-  list-style-type: none;
-  span {
-    display: inline-block;
-  }
+h6 {
+  color: #6c6868 !important;
+  margin-top: -12px;
+}
+
+span {
+  color: #6c6868 !important;
 }
 
 a {
   color: #e11b22;
 }
 
+.section {
+  padding: 1rem 1.5rem;
+}
+
+.content ul {
+  margin: 0 4rem;
+  padding-left: 1rem;
+  text-align: left;
+}
+
 .content p {
   margin: 0 4rem;
   text-align: left;
+}
+
+.logo {
+  margin-bottom: -5vh;
 }
 
 #intro {
@@ -41,37 +57,79 @@ a {
   margin-left: auto;
   margin-right: auto;
   max-width: 850px;
+  margin-top: 3rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    border: none;
+    margin: 0;
+    padding-left: 0 !important;
+  }
+  .tab {
+    &:last-child {
+      margin-left: auto;
+    }
+  }
 }
 
 .icon {
   color: #50301a;
 }
 
+.button.is-primary {
+  background-color: #e11b22;
+  border-color: #e11b22;
+  a {
+    color: white;
+  }
+  &:hover {
+    background-color: #c3300f;
+    border-color: #c3300f;
+  }
+}
+
+.button.is-medium {
+  margin-top: 1rem;
+}
+
 footer {
   background: white !important;
   padding: 9rem 0 0 0 !important;
-  font-size: 16px;
+  font-size: 18px;
   a {
-    color: #999;
+    color: #e11b22;
     &:hover {
-      color: #e11b22;
+      color: #6c6868;
     }
   }
 }
 
 .inspired_by {
-  color: #999;
-  font-size: 16px;
+  color: #6c6868;
+  font-size: 18px;
 }
 
 @media (max-width: 800px) {
   .content p {
-    margin: 0 ;
+    margin: 0;
+    text-align: left;
+  }
+  .columns {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: auto;
+    margin-top: 3rem;
     text-align: left;
   }
 }
 
 @media (max-width: 1023px) {
+  .logo {
+    width: 80%;
+  }
   .content p {
     text-align: left;
   }
@@ -79,6 +137,6 @@ footer {
 
 @media (min-width: 1025px) and (min-height: 1000px) {
   .logo {
-    margin-top: 20vh;
+    margin-top: 10vh;
   }
 }
