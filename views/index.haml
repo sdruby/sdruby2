@@ -1,11 +1,21 @@
 = image_tag("/assets/logo.svg", class: "logo", alt: "SD Ruby logo", size: "800x332")
 
-#intro
-  %p SD Ruby is a meetup for software developers who use Ruby, Ruby and Rails, and a ton of other fun web technologies.
+#intro.is-size-5
+  %p SD Ruby is a monthly meetup for developers who write Ruby code.
 
-  %p We meet on the first Thursday of the month at #{link_to "Ivy Street Coworking", "https://ivystreet.co/", target: "blank"} in South Park.
+  %p We&rsquo;re a friendly group of folks who are passionate about building great software and looking to connect with other Ruby developers in the San Diego area.
 
   %p If you're interested in Ruby or Ruby on Rails, please join us!
+
+  %p.is-size-6
+    🗓 1st Thursday of the month
+    %br
+    🕒 7:00pm - 8:30pm
+    %br
+    📍 Ivy Street Coworking (in South Park, San Diego)
+
+  %p
+    #{link_to "RSVP on our Meetup page!", "https://www.meetup.com/sdruby/events/", target: "blank", class: "button is-primary is-medium"}
 
 .columns
   .column
@@ -19,7 +29,7 @@
   .column
     %span.icon
       %i.fab.fa-google
-    %span= link_to "Google", "https://groups.google.com/g/sdruby", target: "blank"
+    %span= link_to "Groups", "https://groups.google.com/g/sdruby", target: "blank"
   .column
     %span.icon
       %i.fab.fa-youtube
@@ -28,9 +38,3 @@
     %span.icon
       %i.fab.fa-x-twitter
     %span= link_to "Twitter", "https://twitter.com/sdruby", target: "blank"
-
-%footer.footer
-  .content.has-text-centered
-    #{link_to "Meet the Organizers", "/organizers"}
-  .content.has-text-centered
-    #{link_to "Read our Code of Conduct", "/conduct"}
