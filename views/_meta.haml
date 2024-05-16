@@ -21,14 +21,14 @@
 %meta{name: "twitter:title", content: @title}
 %meta{name: "twitter:site", content: "@sdruby"}
 
-- # Android icons
-- [196].each do |size|
-  %link{href: "/icons/#{size}.png", rel: "shortcut icon", sizes: "#{size}x#{size}"}
-
-- # iOS icons
-- [120, 180].each do |size|
+- # iOS favicon
+- ["180"].each do |size|
   %link{href: "/icons/#{size}.png", rel: "apple-touch-icon", sizes: "#{size}x#{size}"}
 
-- # Generic icons
-- [128, 192, 256, 512].each do |size|
+- # Android favicon
+- [192].each do |size|
+  %link{href: "/icons/#{size}.png", rel: "icon", sizes: "#{size}x#{size}"}
+
+- # Generic favicon
+- [512].each do |size|
   %link{href: "/icons/#{size}.png", rel: "icon", sizes: "#{size}x#{size}"}

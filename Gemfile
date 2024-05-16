@@ -1,10 +1,8 @@
-source 'https://rubygems.org'
-ruby '2.7.7'
+source "https://rubygems.org"
+ruby "3.3.1"
 
-gem 'haml'
-gem 'sassc'
-gem 'shotgun'
-gem 'sinatra'
-gem 'sprockets'
-gem 'rack-rewrite'
-gem 'uglifier'
+gem "foreman"
+gem "haml"
+gem "rack-rewrite"
+gem "rackup"
+gem "sinatra"

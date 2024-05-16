@@ -12,7 +12,7 @@ This site includes:
   - YouTube
   - Twitter
 
-The website is built using:
+The website is built with:
 - Sinatra (app)
 - HAML (views)
 - Bulma (css)
@@ -24,9 +24,9 @@ The website is built using:
 2. `git clone git@github.com:sdruby/sdruby2.git`
 
 ### Configure the app and bundle install
-1. Switch to Ruby 2.7.7 with the Ruby version manager of your choice (this
+1. Switch to Ruby 3.3.1 with the Ruby version manager of your choice (this
 should happen automatically from the `.ruby-version` file)
 4. Bundle your gem dependencies: `bundle install`.
 
 ### Launch the app
-1. Run `bundle exec shotgun config.ru -p 3000` to launch the app.
+1. Run `bundle exec foreman start -f Procfile.dev` to launch the app.

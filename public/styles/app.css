@@ -1,8 +1,3 @@
-// * {
-//   outline: 1px solid orange;
-// }
-$primary: #ff5733; // Change this to your desired color
-
 body {
   text-align: center;
 }
@@ -63,16 +58,16 @@ a {
 .tabs {
   display: flex;
   justify-content: space-between;
-  ul {
-    border: none;
-    margin: 0;
-    padding-left: 0 !important;
-  }
-  .tab {
-    &:last-child {
-      margin-left: auto;
-    }
-  }
+}
+
+.tabs ul {
+  border: none;
+  margin: 0;
+  padding-left: 0 !important;
+}
+
+.tabs .tab:last-child {
+  margin-left: auto;
 }
 
 .icon {
@@ -82,13 +77,15 @@ a {
 .button.is-primary {
   background-color: #e11b22;
   border-color: #e11b22;
-  a {
-    color: white;
-  }
-  &:hover {
-    background-color: #c3300f;
-    border-color: #c3300f;
-  }
+}
+
+.button.is-primary a {
+  color: white;
+}
+
+.button.is-primary:hover {
+  background-color: #c3300f;
+  border-color: #c3300f;
 }
 
 .button.is-medium {
@@ -99,12 +96,14 @@ footer {
   background: white !important;
   padding: 9rem 0 0 0 !important;
   font-size: 18px;
-  a {
-    color: #e11b22;
-    &:hover {
-      color: #6c6868;
-    }
-  }
+}
+
+footer a {
+  color: #e11b22;
+}
+
+footer a:hover {
+  color: #6c6868;
 }
 
 .inspired_by {

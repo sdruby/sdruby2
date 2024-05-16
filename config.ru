@@ -1,10 +1,3 @@
-# GEMS
-require 'rubygems'
-require 'sinatra'
-require 'haml'
-require 'sassc'
-require 'sprockets'
-require 'uglifier'
-require './app'
+require "./app"
 
-run SDRuby.new
+run SDRuby
