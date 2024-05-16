@@ -1,0 +1,34 @@
+- #Meta tags
+%meta{charset: "utf-8"}
+%meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+
+- # Open Graph
+%meta{property: "og:description", content: "SD Ruby, based in San Diego, CA, is a meetup for developers who use Ruby, Ruby and Rails, and a ton of other fun web technologies."}
+%meta{property: "og:image", content: "#{request.base_url}/icons/opengraph.png"}
+%meta{property: "og:image:width", content: 1200}
+%meta{property: "og:image:height", content: 630}
+%meta{property: "og:image:type", content: "image/png"}
+%meta{property: "og:locale", content: "en_US"}
+%meta{property: "og:site_name", content: "SD Ruby"}
+%meta{property: "og:title", content: @title}
+%meta{property: "og:type", content: "website"}
+%meta{property: "og:url", content: "#{request.base_url}"}
+
+- # Twitter card
+%meta{name: "twitter:card", content: "summary_large_image"}
+%meta{name: "twitter:description", content: "SD Ruby, based in San Diego, CA, is a meetup for developers who use Ruby, Ruby and Rails, and a ton of other fun web technologies."}
+%meta{name: "twitter:image", content: "#{request.base_url}/icons/opengraph.png"}
+%meta{name: "twitter:title", content: @title}
+%meta{name: "twitter:site", content: "@sdruby"}
+
+- # Android icons
+- [196].each do |size|
+  %link{href: "/icons/#{size}.png", rel: "shortcut icon", sizes: "#{size}x#{size}"}
+
+- # iOS icons
+- [120, 180].each do |size|
+  %link{href: "/icons/#{size}.png", rel: "apple-touch-icon", sizes: "#{size}x#{size}"}
+
+- # Generic icons
+- [128, 192, 256, 512].each do |size|
+  %link{href: "/icons/#{size}.png", rel: "icon", sizes: "#{size}x#{size}"}
