@@ -38,12 +38,8 @@ def image_tag(image, options = {})
 end
 
 def link_to(text, url, options = {})
-  unless options.empty?
-    attributes = " " + options.map{|k,v| k.to_s + "=" + '"' + v + '" '}.join(" ")
-  else
-    attributes = ""
-  end
-  "<a href=#{url}" + attributes + ">#{text}</a>"
+  attributes = options.map { |k, v| "#{k}=\"#{v}\"" }.join(" ")
+  "<a href=\"#{url}\" #{attributes}>#{text}</a>"
 end
 
 # APP
