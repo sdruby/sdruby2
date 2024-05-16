@@ -4,13 +4,18 @@ This is the current website for SD Ruby.
 
 This site includes:
 - The SD Ruby logo
+- Meeting information
 - Social links:
   - Meetup
   - Slack
-  - Google Group
+  - Google Groups
+  - YouTube
   - Twitter
 
-For now, this site is mainly a placeholder, but we'll build it out over time.
+The website is built using:
+- Sinatra (app)
+- HAML (views)
+- Bulma (css)
 
 ## Getting started
 
