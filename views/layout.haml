@@ -34,28 +34,13 @@
     - [196].each do |size|
       %link{href: "/icons/#{size}.png", rel: "shortcut icon", sizes: "#{size}x#{size}"}
 
-    - # Google progressive web app manifest
-    %link{rel: "manifest", href:"/manifest.json"}
-
-    - # iOS home screen app title
-    %meta{name: "apple-mobile-web-app-title", content: "Scientist"}
-
     - # iOS icons
     - [120, 180].each do |size|
       %link{href: "/icons/#{size}.png", rel: "apple-touch-icon", sizes: "#{size}x#{size}"}
 
-    - # Windows tiles
-    %meta{name: "msapplication-config", content: "/browserconfig.xml"}
-
     - # Generic icons
     - [128, 192, 256, 512].each do |size|
       %link{href: "/icons/#{size}.png", rel: "icon", sizes: "#{size}x#{size}"}
-
-    - # Atom feed
-    %link{href: "#{request.base_url}/podcast.atom", rel: "alternate", type: "application/atom+xml", title: "SD Ruby Podcast"}
-
-    - # RSS feed
-    %link{href: "#{request.base_url}/podcast.rss", rel: "alternate", type: "application/rss+xml", title: "SD Ruby Podcast"}
 
   %body
     %section.section
