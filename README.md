@@ -24,9 +24,7 @@ The website is built with:
 2. `git clone git@github.com:sdruby/sdruby2.git`
 
 ### Configure the app and bundle install
-1. Switch to Ruby 3.3.7 with the Ruby version manager of your choice (this
-should happen automatically from the `.ruby-version` file)
-4. Bundle your gem dependencies: `bundle install`.
+1. Bundle your gem dependencies: `bundle install`.
 
 ### Launch the app
 1. Run `bundle exec foreman start -f Procfile.dev` to launch the app.
