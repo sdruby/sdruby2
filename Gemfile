@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Ruby
-ruby "4.0.2"
+ruby "4.0.9"
 
 # Gems
 gem "foreman"
