@@ -4,13 +4,15 @@ GEM
     base64 (0.3.0)
     foreman (0.90.0)
       thor (~> 1.4)
-    haml (7.2.0)
+    haml (7.5.2)
+      prism (>= 1.1.0)
       temple (>= 0.8.2)
       thor
       tilt
     logger (1.7.0)
     mustermann (3.1.1)
-    rack (3.2.6)
+    prism (2.1.0)
+    rack (3.2.8)
     rack-protection (4.2.1)
       base64 (>= 0.1.0)
       logger (>= 1.6.0)
@@ -28,9 +30,9 @@ GEM
       rack-protection (= 4.2.1)
       rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
-    temple (0.10.4)
+    temple (0.10.7)
     thor (1.5.0)
-    tilt (2.7.0)
+    tilt (2.9.0)
     webrick (1.9.2)
 
 PLATFORMS
